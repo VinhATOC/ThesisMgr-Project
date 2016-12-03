@@ -1,0 +1,134 @@
+
+.show-1000 {
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.close-overlay {
+		text-align: right;
+		display: block;
+	}
+
+	.close-overlay .close-icon {
+		padding: 5px;
+		font-size: 2em;
+		cursor: pointer;
+	}
+
+	.close-overlay .close-icon:hover {
+		color: #FF7722;
+	}
+
+
+	.sort-type {
+		display: none;
+		padding: 0px 10px;
+	}
+
+	.sort-type .sort-by {
+		font-size: 24px;
+		font-weight: 500;
+	}
+
+	.sort-type select {
+	//    margin-right: 20px;
+	    overflow-y: auto;
+	    text-align: center;
+	    width: 100%;
+	    height: auto;
+	    border: none;
+        outline: 0px;
+        margin: 5px auto
+	}
+
+	.sort-type .sort-by {
+		color: #000;
+		background-color: #fff;
+		float: left;
+		margin-left: 20px;
+	}
+
+	.sort-type option {
+		padding-left: 2em;
+		text-align: left;
+		height: auto;
+		border: 1px solid #ddd;
+		border-bottom: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		cursor: pointer;
+	}
+
+	.sort-type option:first-child {
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+	}
+
+	.sort-type option:last-child {
+		border: 1px solid #ddd;
+		border-bottom-left-radius: 2px;
+		border-bottom-right-radius: 2px;
+	}
+
+	.sort-type option:checked,
+	.sort-type option:focus,
+	.sort-type option:active {
+		background-color: #FF7722 !important;
+		color: #fff;
+	}
+
+	.sort-type option:hover {
+		color: #FF7722;
+		background-color: #ddd;
+	}
+
+	.filter {
+		display: none;
+		height: auto;
+		background-color: #111;
+		padding: 0px 10px;
+	}
+
+	.filter ul {
+		padding: 0px;
+		border: 1px solid #ddd;
+		border-radius: 2px;
+	}
+
+	.filter li {
+		border-bottom: 1px solid #ddd;
+		margin: 0px !important;
+		padding: 0px;
+	}
+
+
+	.filter a {
+		display: block;
+		padding: 10px;
+	}
+
+	.filter ul li:last-child {
+		border: none;
+	}
+
+	.filter li:hover {
+		background: #ddd;
+	}
+
+	.overlay {
+	    height: 0%;
+	    width: 100%;
+	    position: fixed;
+	//    position: absolute;
+	    z-index: 696;
+	    top: 0;
+	    left: 0;
+	    overflow-y: auto;
+		background-color: #fff;
+	}
+
+	.show-1000 {
+		visibility: visible;
+	}
+}
